@@ -44,16 +44,16 @@ app.delete("/employee/:id",(req,res)=>{
     })
 })
 
-app.put("/employee/:id",(req,res)=>{
-    const empid=req.params.id;
-    const q="UPDATE employee SET (`id`=?,`name`=?,`gender`=?,`dob`=?,`age`=?,`email`=?,`salary`=?,`phno`=?,`dept`=?) WHERE id=?"
-    const values=[req.body.id,req.body.name,req.body.gender,req.body.dob,req.body.age,req.body.email,req.body.salary,req.body.phno,req.body.dept]
+// app.put("/employee/:id",(req,res)=>{
+//     const empid=req.params.id;
+//     const q="UPDATE employee SET (`id`=?,`name`=?,`gender`=?,`dob`=?,`age`=?,`email`=?,`salary`=?,`phno`=?,`dept`=?) WHERE id=?"
+//     const values=[req.body.id,req.body.name,req.body.gender,req.body.dob,req.body.age,req.body.email,req.body.salary,req.body.phno,req.body.dept]
 
-    db.query(q,[...values,empid],(err,data)=>{
-        if(err) return res.json(err)
-        return res.json("Employee updated successfully")
-    })
-})
+//     db.query(q,[...values,empid],(err,data)=>{
+//         if(err) return res.json(err)
+//         return res.json("Employee updated successfully")
+//     })
+// })
 
 app.listen(8800,()=>{
     console.log("Connected to backend")

@@ -45,7 +45,7 @@ const Employee = () => {
                             <th>Ph.No</th>
                             <th>Dept</th>
                             <th>Delete</th>
-                            <th>Update</th>
+                            {/* <th>Update</th> */}
                         </tr>
                     </thead>
                     <tbody>
@@ -61,7 +61,7 @@ const Employee = () => {
                                 <td>{emps.phno}</td>
                                 <td>{emps.dept}</td>
                                 <td ><button className="deleteemp" onClick={()=>handleDelete(emps.id)}>Delete</button></td>
-                                <td><button className="updateemp"><Link to={`/update/${emps.id}`}>Update</Link></button></td>
+                                {/* <td><button className="updateemp"><Link to={`/update/${emps.id}`}>Update</Link></button></td> */}
                             </tr>
                         ))}
                     </tbody>

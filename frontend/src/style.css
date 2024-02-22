@@ -41,7 +41,7 @@ tr{
     box-shadow: 0px 0px 10px rgb(251,111, 98);
 }
 
-.updateemp{
+/* .updateemp{
     border: none;
     cursor: pointer;
     width: 60px;
@@ -52,7 +52,7 @@ tr{
 }
 .updateemp:hover{
     box-shadow: 0px 0px 10px rgb(45, 189, 255);
-}
+} */
 
 .addemp{
     margin-top: 20px;
