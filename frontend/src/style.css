@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:ital,wght@1,500&display=swap');
 body{
-    background-image: linear-gradient(to right,rgb(128, 249, 243),rgb(112, 112, 253));
+    background-image: linear-gradient(to right,rgb(27, 56, 54),rgb(200, 200, 212));
     opacity: 50;
 }
 table,th,td{
@@ -19,6 +19,9 @@ td{
 tr{
     height: 40px;
     background-color: rgb(171, 153, 153);
+}
+tr :nth-child(even){
+    background-color: whitesmoke;
 }
 
 .final{
@@ -41,7 +44,7 @@ tr{
     box-shadow: 0px 0px 10px rgb(251,111, 98);
 }
 
-/* .updateemp{
+.updateemp{
     border: none;
     cursor: pointer;
     width: 60px;
@@ -52,7 +55,7 @@ tr{
 }
 .updateemp:hover{
     box-shadow: 0px 0px 10px rgb(45, 189, 255);
-} */
+}
 
 .addemp{
     margin-top: 20px;
@@ -120,7 +123,7 @@ input{
 
 .head{
     margin: 40px 0 0 0;
-    font-family: 'Nova Square';
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 3px silver;
 }

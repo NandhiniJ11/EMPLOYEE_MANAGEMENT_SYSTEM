@@ -49,8 +49,10 @@ const Employee = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {emp.map(emps=>(
-                            <tr>
+                        {
+                        emp.length>0?(
+                            emp.map(emps=>(
+                            <tr key={emp.id}>
                                 <td>{emps.id}</td>
                                 <td>{emps.name}</td>
                                 <td>{emps.gender}</td>
@@ -63,7 +65,12 @@ const Employee = () => {
                                 <td ><button className="deleteemp" onClick={()=>handleDelete(emps.id)}>Delete</button></td>
                                 {/* <td><button className="updateemp"><Link to={`/update/${emps.id}`}>Update</Link></button></td> */}
                             </tr>
-                        ))}
+                        ))
+                    ):(
+                        <tr>
+                            <td colSpan="10">No employees found</td>
+                        </tr>
+                    )}
                     </tbody>
                 </table>
                 <button className="addemp"><Link to="/add">Add Employee </Link></button>
