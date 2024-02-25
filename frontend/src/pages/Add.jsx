@@ -32,7 +32,8 @@ const Add = () => {
         }
     }
 
-    
+    const currentDate = new Date().toISOString().split('T')[0]; 
+
     return (
         <div className='form'>
             <h1 className='head'>Add Employee</h1>
