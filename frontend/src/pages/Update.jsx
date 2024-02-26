@@ -26,7 +26,7 @@ const Update = () => {
     const handleClick= async e =>{
         e.preventDefault()
         try {
-            await axios.put("http://localhost:8800/employee/"+empId,emps)
+            await axios.put("https://employee-management-system-backend-sk6j.onrender.com"+empId,emps)
             navi("/")
         } catch (err) {
             console.log(err)

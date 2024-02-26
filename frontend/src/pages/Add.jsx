@@ -25,7 +25,7 @@ const Add = () => {
     const handleClick = async (e) => {
         e.preventDefault()
         try {
-            await axios.post("http://localhost:8800/employee", emps)
+            await axios.post("https://employee-management-system-backend-sk6j.onrender.com/", emps)
             navi("/")
         } catch (err) {
             console.log(err)
