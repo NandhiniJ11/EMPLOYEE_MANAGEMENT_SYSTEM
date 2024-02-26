@@ -9,7 +9,7 @@ const Employee = () => {
     useEffect(() => {
         const fetchAllEmp = async () => {
             try {
-                const res = await axios.get("https://employee-management-system-backend-sk6j.onrender.com/")
+                const res = await axios.get("https://employee-management-system-backend-sk6j.onrender.com/employee")
                 setEmp(res.data)
             } catch (err) {
                 console.log(err)
@@ -21,7 +21,7 @@ const Employee = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete("https://employee-management-system-backend-sk6j.onrender.com/" + id)
+            await axios.delete("https://employee-management-system-backend-sk6j.onrender.com/employee/" + id)
             window.location.reload()
         } catch (err) {
             console.log(err)
