@@ -28,6 +28,10 @@ const Employee = () => {
         }
     }
 
+    const formatDate = (dateString) => {
+        return dateString.split('T')[0]; // Split at 'T' and take only the date part
+    };
+
     return (
         <div className='final'>
             <h1>Employee Details</h1>
@@ -53,7 +57,7 @@ const Employee = () => {
                                 <td>{emps.id}</td>
                                 <td>{emps.name}</td>
                                 <td>{emps.gender}</td>
-                                <td>{emps.dob}</td>
+                                <td>{formatDate(emps.dob)}</td>
                                 <td>{emps.age}</td>
                                 <td>{emps.email}</td>
                                 <td>{emps.salary}</td>
